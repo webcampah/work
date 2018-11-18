@@ -28,6 +28,8 @@ class PostsController < ApplicationController
         post.update(post_params)
         redirect_to post_path(post.id)
     end
+    def destroy
+    end
    private
 
      def post_params
